@@ -1,0 +1,17 @@
+@media screen and (max-width: 1170px) {
+    .custom-navbar .navbar-nav.navbar-nav-first {
+      margin-left: inherit;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .about-info {
+      padding-right: 0;
+    }
+  
+    .about-image {
+      position: relative;
+    }
+  }

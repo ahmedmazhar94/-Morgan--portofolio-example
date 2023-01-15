@@ -1,0 +1,548 @@
+/* jana dates product website 
+developed by https://github.com/ahmedmazhar94
+*/
+
+/*Universal selector property*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/*Body Font styling*/
+@import url(main.css);
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+html {
+    --primaryColor: #0081B4;
+    --secondaryColor: #FFFFFF;
+    --thirdColor: #C4DFAA;
+    --fourthColor: #2C3333;
+}
+
+/*Applying the z-index property to element to make other element visible in (Home section)*/
+
+/*=================[Start of Home Section]=================*/
+/*Add a background image to (Home section)*/
+.home-section {
+    background-color: aqua;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay-layer {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+/*Styling the nav bar elements*/
+.nav-bar ul li a {
+    margin: 5px;
+    font-size: 100%;
+}
+
+/*This property give some animations to nav bar elements*/
+.nav-bar ul li::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: var(--primaryColor);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-bar ul li:hover::after {
+    width: 70%;
+}
+
+.hero-titles {
+    color: var(--secondaryColor);
+}
+
+.hero-icons {
+    font-size: larger;
+    color: var(--primaryColor);
+}
+
+/*Animation and Positioning the text name*/
+.hero-titles h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    color: var(--secondaryColor);
+    font-weight: 900;
+    font-size: 80px;
+}
+
+.hero-titles h2 {
+    font-size: 70px;
+    border-right: 4px solid;
+    color: var(--secondaryColor);
+}
+
+.iconDiv i {
+    color: var(--secondaryColor);
+}
+
+.btn-0 {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border: solid var(--primaryColor);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.btn-0:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    color: var(--primaryColor);
+    background-color: var(--primaryColor);
+}
+
+.wire-frame {
+    border-radius: 5px 60px 5px;
+    border: solid 5px var(--primaryColor);
+}
+
+.about-me img {
+    border-radius: 5px 60px 5px;
+    border: solid var(--primaryColor);
+}
+
+.light-overlay {
+    background-color: var(--secondaryColor);
+}
+
+.about-me-subtitle-h3 {
+    color: var(--fourthColor);
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.portofolio h2 {
+    color: var(--primaryColor);
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.about-me-info {
+    color: var(--fourthColor);
+}
+
+.about-me-subtitle {
+    color: var(--primaryColor);
+}
+
+.about-me-subtitle {
+    font-weight: 600;
+}
+
+.about-me-info {
+    font-size: 20px;
+}
+
+.progress-bar {
+    background-color: var(--primaryColor);
+}
+
+.progress {
+    background-color: var(--secondaryColor);
+}
+
+.span {
+    color: var(--fourthColor);
+}
+
+.progress-bar span {
+    color: var(--secondaryColor);
+    font-weight: 600;
+}
+
+/*styling button 1 of contact us*/
+.button1 {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--secondaryColor);
+    padding: 10px 25px;
+    font-size: 13px;
+    background-color: var(--primaryColor);
+    position: relative;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button2 {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primaryColor);
+    border: 3px solid var(--primaryColor);
+    padding: 10px 25px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-style: unset;
+    border-radius: 8px;
+}
+
+
+
+/* to give animation to button 1*/
+.button1:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    color: var(--primaryColor);
+    background-color: var(--secondaryColor);
+}
+
+/* to give animation to button 2*/
+.button2:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    color: var(--secondaryColor);
+    background-color: var(--primaryColor);
+}
+
+.bg-overlay {
+    background-color: var(--secondaryColor);
+}
+
+.services-title h2 {
+    padding: 10px;
+    color: var(--secondaryColor);
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.single-block {
+    background-color: var(--secondaryColor);
+}
+
+.six-blocks i:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+}
+
+.six-blocks i {
+    color: var(--primaryColor);
+    font-size: 45px;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.services-content {
+    color: var(--fourthColor);
+    font-style: inherit;
+    font-size: 18px;
+}
+
+.bg-overlay {
+    background-color: var(--primaryColor);
+}
+
+.ico-frame i {
+    color: var(--primaryColor);
+    font-size: 50px;
+}
+
+.num {
+    font-size: xx-large;
+    font-weight: 600;
+    color: #131313;
+}
+
+.ico-frame p {
+    color: #232020a8;
+    font-size: large;
+    font-weight: 600;
+}
+
+.contact .info .item {
+    margin-bottom: 30px;
+}
+
+
+.carousel-inner {
+    color: var(--secondaryColor);
+    padding: 10%;
+}
+
+.testmonials h2 {
+    color: var(--secondaryColor);
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.our-blog h2 {
+    color: var(--secondaryColor);
+}
+
+.blog-item {
+    width: 100%;
+    background-color: var(--secondaryColor);
+    border-radius: 3px;
+}
+
+.blog-content h6 a {
+    font-weight: 700;
+    color: var(--fourthColor);
+}
+
+.blog-content h4 a {
+    text-decoration: none;
+    color: var(--fourthColor);
+}
+
+.contact-us h2 {
+    color: var(--primaryColor);
+}
+
+.copyRight p {
+    color: var(--secondaryColor);
+}
+
+.big-icon {
+    border-width: 10px;
+    border-radius: 10px;
+}
+
+.three-blocks i:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+}
+
+.three-blocks i {
+    color: var(--primaryColor);
+    font-size: 45px;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.all-three-blocks {
+    padding: 0 15%;
+}
+
+.form-control {
+    border: none;
+    border: 2px solid var(--primaryColor);
+    border-radius: 20px;
+    background: none;
+}
+
+.form-control:active,
+.form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #000;
+}
+
+.col-form-label {
+    color: #000;
+    font-size: 13px;
+}
+
+.btn-5,
+.form-control,
+.custom-select {
+    height: 45px;
+    border-radius: 5px;
+}
+
+
+
+.btn-5 {
+    border: none;
+    border-radius: 0;
+    font-size: 11px;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    border-radius: 30px !important;
+}
+
+.btn-5.btn-primary {
+    border-radius: 30px;
+    background: var(--primaryColor);
+    color: #fff;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(49, 11, 9, 0.2);
+    box-shadow: 0 15px 30px 0 rgba(239, 67, 57, 0.2);
+}
+
+.btn-5:hover {
+    background-color: var(--primaryColor) ;
+    color: var(--secondaryColor);
+    border: 2px solid var(--primaryColor);
+
+}
+
+.btn-5:active,
+.btn-5:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.contact-wrap {
+    -webkit-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #efefef;
+}
+
+.contact-wrap .col-form-label {
+    font-size: 14px;
+    color: #b3b3b3;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    padding: 0;
+}
+
+.contact-wrap .form,
+.contact-wrap .contact-info {
+    padding: 40px;
+}
+
+.contact-wrap .contact-info {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-wrap .contact-info ul li {
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-wrap .contact-info ul li .wrap-icon {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.contact-wrap .form {
+    background: #fff;
+}
+
+.contact-wrap .form h3 {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.contact-wrap .contact-info {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.contact-wrap .contact-info a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media (max-width: 1199.98px) {
+    .contact-wrap .contact-info {
+        height: 400px !important;
+    }
+}
+
+.contact-wrap .contact-info h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+label.error {
+    font-size: 12px;
+    color: red;
+}
+
+#message {
+    resize: vertical;
+}
+
+#form-message-warning,
+#form-message-success {
+    display: none;
+}
+
+#form-message-warning {
+    color: #B90B0B;
+}
+
+#form-message-success {
+    color: #55A44E;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.submitting {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+    
+
+  }
+  
+  .container:hover .middle {
+    opacity: 0.3;
+  }
+  
+  .text {
+    position: absolute;
+    background-color: #070212;
+    color: var(--fourthColor);
+    font-size: 16px;
+    padding: 16px 32px;
+    margin: 10px;
+  }
